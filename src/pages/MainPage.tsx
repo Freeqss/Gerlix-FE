@@ -67,20 +67,20 @@ const MainPage = () => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-2 items-center">
+    <div className="flex w-full flex-col items-center gap-2">
       <div className="flex gap-4">
         <div className="flex flex-col">
           <input
             id="loginEmail"
             value={loginEmail}
             onChange={(e) => handleInputChange("loginEmail", e.target.value)}
-            className="max-w-52 border border-gray-300 rounded-sm"
+            className="max-w-52 rounded-sm border border-gray-300"
           />
           <input
             id="loginPassword"
             value={loginPassword}
             onChange={(e) => handleInputChange("loginPassword", e.target.value)}
-            className="max-w-52 border border-gray-300 rounded-sm"
+            className="max-w-52 rounded-sm border border-gray-300"
           />
           <button onClick={handleLogin} className="w-full max-w-52">
             Login
@@ -91,13 +91,13 @@ const MainPage = () => {
             id="email"
             value={email}
             onChange={(e) => handleInputChange("email", e.target.value)}
-            className="max-w-52 border border-gray-300 rounded-sm"
+            className="max-w-52 rounded-sm border border-gray-300"
           />
           <input
             id="password"
             value={password}
             onChange={(e) => handleInputChange("password", e.target.value)}
-            className="max-w-52 border border-gray-300 rounded-sm"
+            className="max-w-52 rounded-sm border border-gray-300"
           />
           <button onClick={handleSignUp} className="w-full max-w-52">
             Sign Up
